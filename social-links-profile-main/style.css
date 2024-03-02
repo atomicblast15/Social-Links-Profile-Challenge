@@ -23,8 +23,9 @@ body {
 }
 .card {
   text-align: center;
-  margin-left: 40%;
-  margin-right: 40%;
+
+  margin-left: 10px;
+  margin-right: 10px;
   margin-top: 10%;
   margin-bottom: 10%;
   padding: 40px;
@@ -32,5 +33,12 @@ body {
   background-color: hsl(0, 0%, 12%);
   .location {
     color: hsl(75, 94%, 57%);
+  }
+}
+
+@media (min-width: 376px) {
+  .card {
+    margin-left: 37%;
+    margin-right: 37%;
   }
 }
