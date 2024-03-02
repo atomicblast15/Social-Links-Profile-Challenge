@@ -20,6 +20,9 @@ body {
   font-family: "inter";
   background-color: hsl(0, 0%, 8%);
   color: white;
+  p {
+    font-size: 14px;
+  }
 }
 .card {
   text-align: center;
@@ -33,6 +36,10 @@ body {
   background-color: hsl(0, 0%, 12%);
   .location {
     color: hsl(75, 94%, 57%);
+  }
+  .profile-pic img {
+    border-radius: 100px;
+    width: 75%;
   }
 }
 
