@@ -11,6 +11,10 @@
 - Off Black: hsl(0, 0%, 8%)  background
 
 */
+* {
+  /*  factor in the size of margin and padding when calculatin elemnt sizes with css*/
+  box-sizing: border-box;
+}
 @font-face {
   font-family: "inter";
   src: url(/assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
@@ -20,26 +24,61 @@ body {
   font-family: "inter";
   background-color: hsl(0, 0%, 8%);
   color: white;
+  overflow: hidden;
   p {
     font-size: 14px;
   }
 }
 .card {
   text-align: center;
-
+  justify-content: center;
   margin-left: 10px;
   margin-right: 10px;
-  margin-top: 10%;
-  margin-bottom: 10%;
-  padding: 40px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 30px;
+  border: 0px;
   border-radius: 15px;
   background-color: hsl(0, 0%, 12%);
   .location {
     color: hsl(75, 94%, 57%);
   }
   .profile-pic img {
-    border-radius: 100px;
-    width: 75%;
+    border-radius: 50%;
+    width: 50%;
+  }
+  .container .link {
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    :link {
+      text-decoration: none;
+    }
+    :visited {
+      text-decoration: none;
+    }
+    :hover {
+      background-color: hsl(0, 0%, 31%);
+      border-radius: 8px;
+    }
+    :active {
+      background-color: hsl(75, 94%, 57%);
+      border-radius: 8px;
+    }
+    p {
+      text-align: center;
+      color: white;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+  }
+  .name {
+    font-weight: 700;
+    font-size: small;
+  }
+  .location {
+    font-weight: 400;
   }
 }
 
